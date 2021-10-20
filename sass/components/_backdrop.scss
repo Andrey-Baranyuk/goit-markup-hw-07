@@ -7,9 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: 0;
+    &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: 0;
+  }
 }
