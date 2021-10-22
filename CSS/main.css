@@ -37,6 +37,12 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.social-link, .backdrop, .subscription-btn, .modal-close-btn, .check-text span, .modal-btn, .header-list-contacts, .peculiarities-item-icon, .item-name, .clients-item-icon, .footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
@@ -66,9 +72,6 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -108,9 +111,6 @@ body {
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .backdrop.is-hidden {
@@ -126,8 +126,9 @@ body {
 .strong {
   display: block;
   font-size: 14px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  font-weight: 700;
+  line-height: 1.14286;
+  letter-spacing: 0.03em;
   color: var(--primary-title-color);
   margin-bottom: 20px;
 }
@@ -159,18 +160,14 @@ body {
   width: 200px;
   height: 50px;
   display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 10px 27px;
-  align-items: center;
-  font-size: 16px;
-  line-height: 1.88;
   text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   cursor: pointer;
-  font-weight: bold;
   font-family: inherit;
   color: var(--primary-title-color);
   background-color: #2196f3;
@@ -198,10 +195,10 @@ body {
 }
 
 .modal-title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
   text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
@@ -209,9 +206,9 @@ body {
 
 .form-label {
   display: block;
-  font-weight: normal;
   font-size: 12px;
-  line-height: 14px;
+  font-weight: 500;
+  line-height: 1.16667;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
@@ -276,15 +273,14 @@ body {
 .modal-close-btn {
   width: 18px;
   height: 18px;
-  justify-content: center;
-  align-items: center;
 }
 
 .check-text {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  line-height: 1.2;
+  font-weight: 400;
+  line-height: 1.71429;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 30px;
@@ -292,9 +288,6 @@ body {
 }
 
 .check-text span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 15px;
   border-radius: 3px;
@@ -323,10 +316,10 @@ body {
   margin: 0 auto;
   padding: 10px 32px;
   cursor: pointer;
-  font-weight: bold;
   font-family: inherit;
   font-size: 16px;
-  line-height: 1.88;
+  font-weight: 500;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
   border: none;
@@ -339,9 +332,6 @@ body {
 }
 
 .modal-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -361,9 +351,10 @@ body {
 .header-logo {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  line-height: 1.15385;
+  letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
   margin-right: 93px;
@@ -404,15 +395,13 @@ body {
 }
 
 .header-list-contacts {
-  display: flex;
   margin-left: auto;
-  align-items: center;
 }
 
 .header-link {
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 500;
+  line-height: 1.14286;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   padding-top: 32px;
@@ -438,9 +427,9 @@ body {
 }
 
 .header-tel-link {
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 500;
+  line-height: 1.14286;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -476,11 +465,11 @@ body {
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 50px;
-  font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-weight: 900;
+  line-height: 1.36364;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-title-color);
 }
@@ -488,10 +477,9 @@ body {
 .main-button {
   padding: 10px 32px;
   cursor: pointer;
-  font-weight: bold;
-  font-family: inherit;
   font-size: 16px;
-  line-height: 1.88;
+  font-weight: 700;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
   background-color: #2196f3;
@@ -510,9 +498,6 @@ body {
 .peculiarities-item {
   width: 270px;
   flex-basis: calc(100% / 4 - 30px);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
   color: var(--secondary-title-color);
   margin-left: 30px;
 }
@@ -527,24 +512,23 @@ body {
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .peculiarities-title {
-  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 700;
+  line-height: 1.14286;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
   margin-bottom: 10px;
 }
 
 .peculiarities-text {
-  font-weight: normal;
   font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -567,10 +551,11 @@ body {
 }
 
 .about-us-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
   color: var(--secondary-title-color);
   margin-bottom: 50px;
 }
@@ -581,13 +566,12 @@ body {
 
 .item-name {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  line-height: 1.17;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14286;
+  letter-spacing: 0.03em;
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -609,9 +593,10 @@ body {
 }
 
 .team-title {
-  font-weight: bold;
   font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-title-color);
   margin-bottom: 50px;
@@ -631,19 +616,20 @@ body {
 }
 
 .team-personal-name {
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  font-weight: 500;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-text-color);
 }
 
 .team-position {
-  padding: auto;
   margin-top: 10px;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1.19;
+  font-weight: 400;
+  line-height: 1.125;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 16px;
@@ -655,9 +641,10 @@ body {
 }
 
 .clients-title {
-  font-weight: bold;
   font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-title-color);
   margin-bottom: 50px;
@@ -693,9 +680,6 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .clients-item-icon:hover, .clients-item-icon:focus {
@@ -706,10 +690,11 @@ body {
 }
 
 .footer-link-address {
-  font-weight: normal;
-  font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+  font-style: normal;
   color: var(--primary-title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -733,9 +718,10 @@ body {
 }
 
 .social-title {
-  font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 1.14286;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-title-color);
   text-align: start;
@@ -768,9 +754,6 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -796,10 +779,11 @@ body {
 }
 
 .footer-tel-link {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -825,12 +809,11 @@ body {
 .gallery-filters-btn {
   display: block;
   font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
+  font-weight: 500;
+  line-height: 1.625;
   letter-spacing: 0.03em;
+  text-align: center;
   border: none;
   background: #f5f4fa;
   padding: 6px 22px;
@@ -852,6 +835,7 @@ body {
 
 .gallary-work-title {
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
@@ -859,9 +843,10 @@ body {
 }
 
 .gallary-work-text {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1.88;
+  font-weight: 400;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: left;
   margin-top: 4px;
@@ -902,9 +887,10 @@ body {
 }
 
 .gallary-top-text {
-  font-weight: normal;
   font-size: 18px;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
   padding: 63px 24px;
   color: var(--primary-title-color);
   background-color: rgba(33, 150, 243, 0.9);

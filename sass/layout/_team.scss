@@ -12,9 +12,7 @@
 }
 
 .team-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 700, 42px, 0.03em);
   text-align: center;
   color: var(--secondary-title-color);
   margin-bottom: 50px;
@@ -34,18 +32,13 @@
 }
 
 .team-personal-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 500, 19px, 0.03em);
   text-align: center;
   color: var(--secondary-text-color);
 }
 .team-position {
-  padding: auto;
   margin-top: 10px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 400, 18px, 0.03em);
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 16px;

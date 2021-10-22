@@ -3,9 +3,7 @@
   padding-bottom: 94px;
 }
 .clients-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 700, 42px, 0.03em);
   text-align: center;
   color: var(--secondary-title-color);
   margin-bottom: 50px;
@@ -40,9 +38,7 @@
   border-radius: 4px;
   border: 1px solid #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %aline-items;
     &:hover,
     &:focus {
     color: var(--accent-color);
